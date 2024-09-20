@@ -1,8 +1,5 @@
 fetch('https://whatyearisit-backend-e3c6gm0yr-amir-yakdis-projects.vercel.app/')
-.then((Response) => Response.json())
-.then((data) => {
-    document.getElementById('year').textContent = data.year;
-});
-
-
-
+ .then(response => response.json())
+ .then(data => {
+   document.querySelector('#year').textContent = data.year;
+ });
